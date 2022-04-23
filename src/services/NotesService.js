@@ -4,4 +4,4 @@ const getAll = () => {
     return httpClient.get("/notes");
 }
 
-export default getAll;
+export default { getAll };
