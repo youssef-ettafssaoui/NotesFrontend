@@ -12,8 +12,8 @@ function App() {
         <Navbar />
         <div>
           <Routes>
-            <Route exact path="/" component={NotesList} />
-            <Route exact path="*" component={NotFound} />
+            <Route exact path="/" element={<NotesList />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </div>
