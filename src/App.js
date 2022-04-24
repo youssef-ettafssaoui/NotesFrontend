@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AddNote from "./components/AddNote";
+import NoteDetails from "./components/NoteDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/" element={<NotesList />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/add" element={<AddNote />} />
+            <Route path="/notes/:id" element={<NoteDetails />} />
           </Routes>
         </div>
       </div>

@@ -65,7 +65,7 @@ const AddNote = () => {
                     </select>
 
                 </div>
-                <div className="text-center">
+                <div className="text-right">
                     <button onClick={(e) => saveNote(e)}>Add note</button>
                 </div>
             </form>
