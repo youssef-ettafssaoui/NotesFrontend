@@ -19,7 +19,8 @@ const NotesList = () => {
 
     return (  
         <div className="main-content">
-            <h4>List of Notes</h4>
+            <h2>List of Notes :</h2>
+            <h5>This App is developed using ReactJs and Spring Boot</h5>
             <div className="notes-list mt-4">
                 {
                     notes && notes.map(note => (
