@@ -18,6 +18,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
             <Route path="/add" element={<AddNote />} />
             <Route path="/notes/:id" element={<NoteDetails />} />
+            <Route path="/notes/edit/:id" element={<AddNote />} />
           </Routes>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Moment from "react-moment";
 import { Link } from "react-router-dom";
 import NotesService from "../services/NotesService";
 
@@ -26,7 +27,8 @@ const NotesList = () => {
                         <div key={note.id} className="notes-preview mt-3">
                             <Link to={`/notes/${note.id}`}>
                                 <h5 className="primary-color text-capitalize">{note.title}</h5>
-                                <p>{note.body}</p>
+                                <span>Updated : </span><Moment fromNow className="font-italic">{note.updatedAt}</Moment>
+                                <p className="text-right font-italic">category : {note.category}</p>
                             </Link>
                         </div>
                     )) : <div>No notes available</div>
